@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portofolio</title>
+    <link rel="stylesheet" href="css/style.css">
+
+    <style>
+        .portfolio-section {
+            padding: 20px;
+        }
+        .portfolio-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+        }
+        .portfolio-item {
+            background: #fff;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+        }
+        .portfolio-item img {
+            width: 100%;
+            height: 150px;
+            object-fit: cover;
+        }
+        .portfolio-item p {
+            padding: 10px;
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>xedrashop</h1>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="products.html">Produk</a>
+        <a href="portfolio.html">Portofolio</a>
+        <a href="testimonials.html">Testimoni</a>
+        <a href="faq.html">FAQ</a>
+    </nav>
+</header>
+
+<section class="hero">
+    <h2>Portofolio</h2>
+</section>
+
+<section class="portfolio-section">
+
+    <div class="portfolio-grid">
+        <div class="portfolio-item">
+            <img src="https://picsum.photos/400/300?random=21">
+            <p>Proyek 1 – Deskripsi singkat</p>
+        </div>
+
+        <div class="portfolio-item">
+            <img src="https://picsum.photos/400/300?random=22">
+            <p>Proyek 2 – Deskripsi singkat</p>
+        </div>
+
+        <div class="portfolio-item">
+            <img src="https://picsum.photos/400/300?random=23">
+            <p>Proyek 3 – Deskripsi singkat</p>
+        </div>
+    </div>
+
+</section>
+
+<script src="js/script.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Produk</title>
+    <link rel="stylesheet" href="css/style.css">
+
+    <style>
+        .products-section {
+            padding: 20px;
+        }
+        .products-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+            gap: 20px;
+        }
+        .product-card {
+            background: #fff;
+            padding: 15px;
+            border-radius: 10px;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+        .product-card img {
+            width: 100%;
+            height: 130px;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+        .product-price {
+            margin-top: 10px;
+            font-weight: bold;
+            color: #2c7a7b;
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>xedrashop</h1>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="products.html">Produk</a>
+        <a href="portfolio.html">Portofolio</a>
+        <a href="testimonials.html">Testimoni</a>
+        <a href="faq.html">FAQ</a>
+    </nav>
+</header>
+
+<section class="hero">
+    <h2>Produk Kami</h2>
+    <p>Pilih produk terbaik dari bisnis kami.</p>
+</section>
+
+<section class="products-section">
+
+    <div class="products-grid">
+
+        <div class="product-card">
+            <img src="https://picsum.photos/400/300?random=11">
+            <h3>Produk 1</h3>
+            <p class="product-price">Rp 100.000</p>
+        </div>
+
+        <div class="product-card">
+            <img src="https://picsum.photos/400/300?random=12">
+            <h3>Produk 2</h3>
+            <p class="product-price">Rp 150.000</p>
+        </div>
+
+        <div class="product-card">
+            <img src="https://picsum.photos/400/300?random=13">
+            <h3>Produk 3</h3>
+            <p class="product-price">Rp 200.000</p>
+        </div>
+
+    </div>
+
+</section>
+
+<script src="js/script.js"></script>
+
+</body>
+</html>

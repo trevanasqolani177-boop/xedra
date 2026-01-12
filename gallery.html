@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galeri</title>
+    <link rel="stylesheet" href="css/style.css">
+
+    <style>
+        /* CSS tambahan khusus galeri */
+        .gallery-container {
+            padding: 20px;
+        }
+
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            grid-gap: 15px;
+        }
+
+        .gallery-grid img {
+            width: 100%;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 10px;
+            box-shadow: 0 0 5px rgba(0,0,0,0.3);
+            transition: transform 0.3s;
+        }
+
+        .gallery-grid img:hover {
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>xedrashop</h1>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">Tentang Kami</a>
+        <a href="services.html">Layanan</a>
+        <a href="gallery.html">Galeri</a>
+        <a href="contact.html">Kontak</a>
+    </nav>
+</header>
+
+<section class="hero">
+    <h2>Galeri</h2>
+    <p>Kumpulan foto hasil kerja, produk, atau aktivitas bisnis kami.</p>
+</section>
+
+<section class="gallery-container">
+    <div class="gallery-grid">
+
+        <!-- Gambar bisa diganti -->
+        <img src="https://picsum.photos/400/300?random=1" alt="Foto 1">
+        <img src="https://picsum.photos/400/300?random=2" alt="Foto 2">
+        <img src="https://picsum.photos/400/300?random=3" alt="Foto 3">
+        <img src="https://picsum.photos/400/300?random=4" alt="Foto 4">
+        <img src="https://picsum.photos/400/300?random=5" alt="Foto 5">
+        <img src="https://picsum.photos/400/300?random=6" alt="Foto 6">
+
+    </div>
+</section>
+
+<script src="js/script.js"></script>
+</body>
+</html>
